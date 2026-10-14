@@ -9,18 +9,18 @@
 
     0%,
     100% {
-        transform: translateY(-50%) translateX(0) rotate(-2deg);
+        transform: translateY(-50%) translateX(0) rotate(-3deg);
     }
 
     50% {
-        transform: translateY(calc(-50% - 7px)) translateX(8px) rotate(2deg);
+        transform: translateY(calc(-50% - 10px)) translateX(10px) rotate(3deg);
     }
 }
 
 .butterfly-float {
-    animation: butterfly-float 9s ease-in-out infinite;
+    animation: butterfly-float 6s ease-in-out infinite;
 }
 
 .font-display {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', max-w-2xl;
 }

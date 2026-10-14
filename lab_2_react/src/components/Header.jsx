@@ -1,8 +1,6 @@
 function Header() {
     return (
         <header className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-pink-200 via-pink-100 to-white px-8 py-12 shadow-[0_20px_60px_rgba(236,72,153,0.15)] md:px-14">
-            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-pink-300/20 blur-3xl" />
-            <div className="absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-rose-200/25 blur-3xl" />
 
             <div className="relative grid items-center gap-8 md:grid-cols-[1fr_360px]">
 
@@ -44,7 +42,7 @@ function Header() {
                     <img
                         src="/decorations/butterfly.svg"
                         alt=""
-                        className="butterfly-float absolute right-[-10px] top-[56%] w-[350px] -translate-y-1/2 opacity-70"
+                        className="butterfly-float absolute right-[-7px] top-[88%] w-[450px] -translate-y-1/2 opacity-70"
                     />
                 </div>
 

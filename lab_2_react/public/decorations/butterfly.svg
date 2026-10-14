@@ -1,159 +1,49 @@
 <svg width="460" height="300" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .left-wings {
+      transform-box: view-box;
+      transform-origin: 230px 145px;
+      animation: flap-left 1.2s ease-in-out infinite alternate;
+    }
+    .right-wings {
+      transform-box: view-box;
+      transform-origin: 230px 145px;
+      animation: flap-right 1.2s ease-in-out infinite alternate;
+    }
+    @keyframes flap-left {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-7deg); }
+    }
+    @keyframes flap-right {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(7deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .left-wings, .right-wings { animation: none; }
+    }
+  </style>
   <g opacity="0.46">
-
-    <!-- верхнє ліве крило -->
-    <path
-      d="M226 143
-         C198 109 158 65 103 38
-         C66 20 28 27 22 54
-         C17 78 47 109 100 131
-         C62 125 29 137 25 160
-         C20 188 57 207 103 201
-         C151 195 196 167 226 143Z"
-      fill="#F7C9DD"
-      stroke="#D47FA7"
-      stroke-width="3"
-      stroke-linejoin="round"
-    />
-
-    <!-- верхнє праве крило -->
-    <path
-      d="M234 143
-         C262 109 302 65 357 38
-         C394 20 432 27 438 54
-         C443 78 413 109 360 131
-         C398 125 431 137 435 160
-         C440 188 403 207 357 201
-         C309 195 264 167 234 143Z"
-      fill="#F7C9DD"
-      stroke="#D47FA7"
-      stroke-width="3"
-      stroke-linejoin="round"
-    />
-
-    <!-- нижнє ліве крило -->
-    <path
-      d="M225 153
-         C190 170 151 196 126 226
-         C111 244 117 259 132 255
-         C166 246 202 211 229 174
-         C231 165 230 158 225 153Z"
-      fill="#F2BBD4"
-      stroke="#D47FA7"
-      stroke-width="3"
-      stroke-linejoin="round"
-    />
-
-    <!-- нижнє праве крило -->
-    <path
-      d="M235 153
-         C270 170 309 196 334 226
-         C349 244 343 259 328 255
-         C294 246 258 211 231 174
-         C229 165 230 158 235 153Z"
-      fill="#F2BBD4"
-      stroke="#D47FA7"
-      stroke-width="3"
-      stroke-linejoin="round"
-    />
-
-    <!-- прожилки верхнього лівого крила -->
-    <path
-      d="M218 137 C171 108 116 72 49 51"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <path
-      d="M211 126 C173 88 131 54 91 38"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <path
-      d="M207 151 C158 140 99 140 36 158"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <!-- прожилки верхнього правого крила -->
-    <path
-      d="M242 137 C289 108 344 72 411 51"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <path
-      d="M249 126 C287 88 329 54 369 38"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <path
-      d="M253 151 C302 140 361 140 424 158"
-      stroke="#D47FA7"
-      stroke-width="1.7"
-      stroke-linecap="round"
-    />
-
-    <!-- прожилки нижніх крил -->
-    <path
-      d="M220 165 C188 186 157 215 132 244"
-      stroke="#D47FA7"
-      stroke-width="1.5"
-      stroke-linecap="round"
-    />
-
-    <path
-      d="M240 165 C272 186 303 215 328 244"
-      stroke="#D47FA7"
-      stroke-width="1.5"
-      stroke-linecap="round"
-    />
-
-    <!-- тіло -->
-    <path
-      d="M230 119
-         C219 134 218 157 220 181
-         C222 198 227 215 230 226
-         C233 215 238 198 240 181
-         C242 157 241 134 230 119Z"
-      fill="#C56F98"
-    />
-
-    <!-- голова -->
-    <circle
-      cx="230"
-      cy="115"
-      r="9"
-      fill="#C56F98"
-    />
-
-    <!-- лівий вусик -->
-    <path
-      d="M224 109
-         C211 96 196 89 178 88"
-      stroke="#C56F98"
-      stroke-width="2"
-      stroke-linecap="round"
-    />
-
-    <!-- правий вусик -->
-    <path
-      d="M236 109
-         C249 96 264 89 282 88"
-      stroke="#C56F98"
-      stroke-width="2"
-      stroke-linecap="round"
-    />
-
+    <g class="left-wings">
+      <path d="M226 143 C198 109 158 65 103 38 C66 20 28 27 22 54 C17 78 47 109 100 131 C62 125 29 137 25 160 C20 188 57 207 103 201 C151 195 196 167 226 143Z" fill="#F7C9DD" stroke="#D47FA7" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M225 153 C190 170 151 196 126 226 C111 244 117 259 132 255 C166 246 202 211 229 174 C231 165 230 158 225 153Z" fill="#F2BBD4" stroke="#D47FA7" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M218 137 C171 108 116 72 49 51" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M211 126 C173 88 131 54 91 38" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M207 151 C158 140 99 140 36 158" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M220 165 C188 186 157 215 132 244" stroke="#D47FA7" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <g class="right-wings">
+      <path d="M234 143 C262 109 302 65 357 38 C394 20 432 27 438 54 C443 78 413 109 360 131 C398 125 431 137 435 160 C440 188 403 207 357 201 C309 195 264 167 234 143Z" fill="#F7C9DD" stroke="#D47FA7" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M235 153 C270 170 309 196 334 226 C349 244 343 259 328 255 C294 246 258 211 231 174 C229 165 230 158 235 153Z" fill="#F2BBD4" stroke="#D47FA7" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M242 137 C289 108 344 72 411 51" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M249 126 C287 88 329 54 369 38" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M253 151 C302 140 361 140 424 158" stroke="#D47FA7" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M240 165 C272 186 303 215 328 244" stroke="#D47FA7" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <path d="M230 119 C219 134 218 157 220 181 C222 198 227 215 230 226 C233 215 238 198 240 181 C242 157 241 134 230 119Z" fill="#C56F98"/>
+    <circle cx="230" cy="115" r="9" fill="#C56F98"/>
+    <path d="M224 109 C211 96 196 89 178 88" stroke="#C56F98" stroke-width="2" stroke-linecap="round"/>
+    <path d="M236 109 C249 96 264 89 282 88" stroke="#C56F98" stroke-width="2" stroke-linecap="round"/>
     <circle cx="177" cy="88" r="2.5" fill="#C56F98"/>
     <circle cx="283" cy="88" r="2.5" fill="#C56F98"/>
-
   </g>
 </svg>

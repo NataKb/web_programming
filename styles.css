@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7e6ec;
+    /* Колір фону сторінки */
+    color: #30091b;
+    /* Колір тексту */
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #db8fab;
+    /* Колір шапки та підвалу */
+    color: white;
+}
+
+#content {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.section {
+    padding: 20px;
+    background: rgb(255, 251, 253);
+    /* Колір блоків */
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contacts a {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: #c84d86;
+}
+
+.contacts a:focus {
+    outline: 2px solid #fa60a8;
+}
+
+a[href^="mailto"] {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+}

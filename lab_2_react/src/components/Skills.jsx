@@ -1,6 +1,6 @@
 function Skills() {
     return (
-        <section className="relative overflow-hidden rounded-[2.5rem] border border-pink-100 bg-pink-50 p-7">
+        <section className="relative overflow-hidden rounded-[2.5rem] border border-pink-100 bg-white/80 p-7">
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.25em] text-pink-400">
                 03 / Skills
             </p>
@@ -13,7 +13,7 @@ function Skills() {
                 {['HTML5', 'Python', 'C#', 'Git', 'GitHub'].map((skill) => (
                     <span
                         key={skill}
-                        className="rounded-full border border-pink-200 bg-white px-4 py-2 text-sm font-medium text-[#765967]"
+                        className="rounded-full border border-pink-200 bg-pink-100 px-4 py-2 text-sm font-medium text-[#765967]"
                     >
                         {skill}
                     </span>

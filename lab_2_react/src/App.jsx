@@ -1,8 +1,10 @@
+
 import Header from './components/Header'
 import About from './components/About'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
+import Languages from './components/Languages'
 import Footer from './components/Footer'
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
           <aside className="space-y-6">
             <Education />
             <Skills />
+            <Languages />
           </aside>
 
           <div className="space-y-6">
