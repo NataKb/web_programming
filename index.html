@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме (CV)</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
     <style>
         .lab-title {
@@ -19,6 +20,7 @@
         <header class="header">
             <h1 class="lab-title" style="letter-spacing: 1px;">Черняк Наталія</h1>
             <p>Студентка / Початківець Web-розробник</p>
+            <button id="theme-toggle" class="theme-toggle" type="button">Перемкнути тему</button>
             <p class="contacts">
                 Email: <a href="mailto:nataliia.cherniak.kb.2025@lpnu.ua">nataliia.cherniak.kb.2025@lpnu.ua</a>
                 |
@@ -82,10 +84,31 @@
                     <li>Англійська — Upper-Intermediate (B2)</li>
                 </ul>
             </section>
+            <section class="section" id="reviews-section">
+                <h2>Відгуки</h2>
+                <p id="reviews-status">Завантаження відгуків…</p>
+                <div id="reviews-list"></div>
+            </section>
         </main>
+
+        <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" hidden>
+            <div class="modal-content">
+                <button type="button" id="close-modal" class="close-modal" aria-label="Закрити">×</button>
+                <h2 id="contact-title">Зворотний зв’язок</h2>
+                <p>Залиште повідомлення — буду рада відповісти.</p>
+                <form action="https://formspree.io/f/xnppvyga" method="POST">
+                    <label>Ім’я<input type="text" name="name" autocomplete="name" required></label>
+                    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+                    <label>Номер телефону<input type="tel" name="phone" autocomplete="tel" required></label>
+                    <label>Повідомлення<textarea name="message" rows="4" required></textarea></label>
+                    <button type="submit" class="theme-toggle">Надіслати</button>
+                </form>
+            </div>
+        </div>
 
         <footer class="footer">
             <p>© 2026 Черняк Наталія. Усі права захищені.</p>
+            <p id="system-info" class="system-info">Інформація про браузер завантажується…</p>
         </footer>
     </div>
 </body>

@@ -5,6 +5,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
 @keyframes butterfly-float {
 
     0%,
@@ -21,6 +25,181 @@
     animation: butterfly-float 6s ease-in-out infinite;
 }
 
-.font-display {
-    font-family: 'Playfair Display', max-w-2xl;
+/* Темна тема */
+.cv-dark {
+    background: #211b25;
+    color: #ead9e4;
+}
+
+.cv-dark section {
+    background-color: #302633 !important;
+    border-color: #594453 !important;
+    color: #ead9e4;
+}
+
+.cv-dark section h2,
+.cv-dark section h3 {
+    color: #fff0f6 !important;
+}
+
+.cv-dark section p {
+    color: #ead9e4;
+}
+
+.cv-dark .cv-header {
+    background: linear-gradient(135deg, #3a2b3b, #302633 65%, #29222f) !important;
+    border: 1px solid #5b4355;
+}
+
+.cv-dark .header-name {
+    color: #fff0f6 !important;
+}
+
+.cv-dark .header-name span,
+.cv-dark .header-eyebrow,
+.cv-dark .review-email,
+.cv-dark .contact-eyebrow {
+    color: #f3a9cd !important;
+}
+
+.cv-dark .header-subtitle {
+    color: #ead9e4 !important;
+}
+
+.cv-dark .header-link,
+.cv-dark .theme-toggle-button {
+    background: #4a3749 !important;
+    border-color: #79566e !important;
+    color: #fff0f6 !important;
+}
+
+.cv-dark .header-link:hover,
+.cv-dark .theme-toggle-button:hover {
+    background: #5a4057 !important;
+}
+
+.cv-dark .review-card {
+    background: #3a2d3d !important;
+    border-color: #5b4355 !important;
+}
+
+.cv-dark .review-name,
+.cv-dark .reviews-title {
+    color: #fff0f6 !important;
+}
+
+.cv-dark .review-body,
+.cv-dark .reviews-description {
+    color: #ead9e4 !important;
+}
+
+/* Модальне вікно */
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(35, 15, 26, .65);
+}
+
+.contact-modal-content {
+    position: relative;
+    width: min(100%, 520px);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 28px;
+    border: 1px solid #f3d4e0;
+    border-radius: 24px;
+    background: #fff8fc;
+    color: #4a3541;
+    box-shadow: 0 20px 70px rgba(48, 9, 27, .2);
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    color: #765967;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.contact-form,
+.contact-form label {
+    display: grid;
+    gap: 7px;
+}
+
+.contact-form {
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e6bfd0;
+    border-radius: 10px;
+    background: #fff;
+    color: #4a3541;
+    font: inherit;
+}
+
+.cv-dark .contact-modal-content {
+    border-color: #624b60;
+    background: #302633;
+    color: #f9eaf2;
+}
+
+.cv-dark .contact-title {
+    color: #fff0f6 !important;
+}
+
+.cv-dark .contact-description,
+.cv-dark .contact-form label {
+    color: #ead9e4 !important;
+}
+
+.cv-dark .contact-modal-close {
+    color: #f7d8e8;
+}
+
+.cv-dark .contact-form input,
+.cv-dark .contact-form textarea {
+    border-color: #6c5368;
+    background: #241d29;
+    color: #fff0f6;
+}
+
+.cv-dark .contact-form input::placeholder,
+.cv-dark .contact-form textarea::placeholder {
+    color: #c5adbf;
+}
+
+.cv-dark .contact-form button[type="submit"] {
+    background: #c45c91;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .contact-modal-content {
+        padding: 24px 18px;
+    }
+}
+
+.cv-dark .cv-footer {
+    background: #302633 !important;
+    border: 1px solid #594453;
+}
+
+.cv-dark .cv-footer p {
+    color: #ead9e4 !important;
+}
+
+.cv-dark .cv-footer div {
+    background: #594453 !important;
 }
