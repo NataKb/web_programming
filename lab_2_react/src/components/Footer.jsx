@@ -17,6 +17,7 @@ function Footer() {
             <p className="text-sm text-[#765967]">© 2026 Черняк Наталія. Усі права захищені.</p>
             <div className="mx-auto mt-5 h-px max-w-xs bg-pink-200" />
             <p className="mt-4 text-xs uppercase tracking-[0.25em] text-pink-400">Made with care</p>
+            <p className="mt-3 text-xs text-pink-500"> Сайт розгорнуто на Vercel</p>
             <p className="system-info mt-4 text-xs text-[#765967]">Браузер: {systemInfo.userAgent || '—'}</p>
             <p className="system-info text-xs text-[#765967]">Платформа: {systemInfo.platform || '—'}</p>
         </footer>
